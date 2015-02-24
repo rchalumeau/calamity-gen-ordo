@@ -1,0 +1,89 @@
+<html>
+   <head>
+       <script src="js/jquery-1.6.2.min.js" ></script>
+       <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+
+       <script>
+           $(document).ready( function(){
+               
+               $('.server > .servername ').click( function() {
+                   $(this).parent().children('.content').toggle();
+                   $(this).children('.ui-icon').toggleClass('ui-icon-triangle-1-n ui-icon-triangle-1-s')
+               });
+               
+           });
+       </script>
+       <link type="text/css" href="css/dot-luv/jquery-ui-1.8.16.custom.css" rel="stylesheet" />    
+       <link rel="stylesheet" type="text/css" href="css/style.css" />
+   </head>
+
+   <body>
+   <div class="phase ui-widget">
+       <p class="ui-widget-header">#1</p>
+       <div class="server ui-widget ui-widget-content ui-corner-all ui-state-error">
+           <p class="servername ui-accordion-header">Thieli1<span class="ui-icon ui-icon-triangle-1-n" style="float:right;"></span></p>
+           <div></div>
+           <div class="content">
+               <div class="plan">
+                   <div class="step">
+                       <div class="action">BB Stop</div>
+                   </div>
+                   <div class="step">
+                       <div class="action">Deploy</div>
+                       <div class="action">Purge</div>
+                   </div>
+                   <div class="step">
+                       <div class="action">BB Start</div>
+                   </div>
+               </div>
+               <div class="log">
+               </div>
+               <div class="url">
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <div class="phase ui-widget" >
+       <p class="ui-widget-header">#2</p>
+       
+       <div class="server ui-widget ui-widget-content ui-corner-all ui-state-highlight">
+           <p class="servername ui-accordion-header">Thieli2<span class="ui-icon ui-icon-triangle-1-n" style="float:right;"></p>
+           <div class='content'>
+               <div class="plan">
+                   <div class="step">
+                       <div class="action">BB Stop</div>
+                   </div>
+                   <div class="step">
+                       <div class="action succeeded">Deploy</div>
+                       <div class="action failed">Purge</div>
+                   </div>
+                   <div class="step">
+                       <div class="action running">BB Start</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       
+       <div class="server ui-widget ui-widget-content ui-corner-all ui-state-disabled">
+           <p class="servername ui-accordion-header">Thieli3<span class="ui-icon ui-icon-triangle-1-n" style="float:right;"></p>
+           <div class='content'>
+               <div class="plan ">
+                   <div class="step">
+                       <div class="action">BB Stop</div>
+                   </div>
+                   <div class="step">
+                       <div class="action">Deploy</div>
+                       <div class="action">Purge</div>
+                   </div>
+                   <div class="step">
+                       <div class="action">BB Start</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   
+   </body>
+</html>

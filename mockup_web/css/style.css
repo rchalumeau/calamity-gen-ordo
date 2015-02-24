@@ -1,0 +1,54 @@
+body {
+   }
+/* Conteneur de serveur a traiter en parallele */
+.phase {
+   clear: both;  
+   display : list-item;
+   margin-bottom : 5px;
+}
+/* Serveur */
+.server {
+   width : 150px;
+   margin-left : 10px;
+   margin-bottom : 10px;
+   float : left;
+   }
+
+.servername {
+   cursor : pointer;
+   }
+.content {
+   display: none;
+}
+/* Conteneur des steps de deploiement*/
+.plan {
+   font-size : 10pt;
+   }
+/* Conteneur d'actions paralleles */
+.step {
+   clear: both;  
+   display: block;
+   }
+/* Action unitaire */
+.action {
+   border : 1px solid black;
+   float : left;
+   margin : 2px;
+   /* Icone de status */
+   padding-left : 10px;
+   background-repeat:no-repeat;
+   background-position:left;
+   }
+
+/* Icones */
+.running {
+   background-image:url('img/orange.gif');
+   }
+.failed {
+   background-image:url('img/red.gif');
+}
+.succeeded {
+   background-image:url('img/green.gif');
+}
+.notrunned{
+}

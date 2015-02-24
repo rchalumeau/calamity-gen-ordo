@@ -1,0 +1,4 @@
+#!/usr/bin/python
+
+from calamity.client.application import main
+main()
